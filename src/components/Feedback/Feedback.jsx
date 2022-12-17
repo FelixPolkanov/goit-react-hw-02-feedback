@@ -50,7 +50,7 @@ class Feedback extends React.Component {
     );
     const positiveFeedback = this.countPositiveFeedbackPercentage(
       this.state.good,
-      this.state.total
+      total
     );
 
     return (
@@ -81,11 +81,11 @@ class Feedback extends React.Component {
         </div>
         <h2 className={css.statistic_title}>Statistics:</h2>
         <div className={css.feedback_resault}>
-          <p>Good:{this.state.good}</p>
-          <p>Neutral:{this.state.neutral}</p>
-          <p>Bad:{this.state.bad}</p>
-          <p>Total:{total}</p>
-          <p>Positive feedback:{positiveFeedback}</p>
+          <p>Good: {this.state.good}</p>
+          <p>Neutral: {this.state.neutral}</p>
+          <p>Bad: {this.state.bad}</p>
+          <p>Total: {total}</p>
+          <p>Positive feedback: {positiveFeedback}%</p>
         </div>
       </div>
     );
