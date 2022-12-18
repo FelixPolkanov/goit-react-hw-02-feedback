@@ -1,25 +1,11 @@
-.statistic_title{
-    color: rgb(83, 23, 224);
+.title{
+color: rgb(88, 79, 84);
+font-size: 45px;
 }
 
 
-.controls{
-    text-align: center;
-}
 
-.controls_btn{
- width: 130px;
- height: 60px;
- font-size: 30px;
-color: #fff;
-background-color: rgb(85, 166, 246);
-border-radius: 10%;
-}
 
 .controls_btn:not(:last-child) {
     margin-right: 20px;
 }
-/* 
-.feedback_resault{
-margin-right: 10px;
-} */

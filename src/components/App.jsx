@@ -1,8 +1,22 @@
+import React from 'react';
+import Feedback from './FeedbackOptions/FeedbackOptions';
+// import Statistics from './Statistics/Statistics';
+// import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 
-import Feedback from './Feedback/Feedback';
+export class App extends React.Component {
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
 
-export const App = () => {
-  return (
+
+ onLeaveFeedback = key => {
+    this.setState(prevState => ({ [key]: prevState[key] + 1 }));
+  };
+
+render (){
+  return(
     <div
       style={{
         height: '100vh',
@@ -15,5 +29,5 @@ export const App = () => {
     >
       <Feedback/>
       </div>
-  );
+)}
 };

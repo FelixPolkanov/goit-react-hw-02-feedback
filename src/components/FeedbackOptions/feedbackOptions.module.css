@@ -1,0 +1,13 @@
+.controls {
+    text-align: center;
+}
+
+.controls_btn {
+    width: 130px;
+    height: 60px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(85, 166, 246);
+    border-radius: 10%;
+    cursor: pointer;
+}
