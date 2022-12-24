@@ -9,4 +9,6 @@ export const SectionWrapper = styled.section`
 
 export const Title = styled.h2`
   margin: 0 0 20px 0;
+  font-size: 40px;
+  color: blue;
 `;

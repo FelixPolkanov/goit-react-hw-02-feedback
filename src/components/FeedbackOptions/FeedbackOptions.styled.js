@@ -21,7 +21,8 @@ export const Button = styled.button`
   text-transform: capitalize;
   cursor: pointer;
   &:hover {
-    box-shadow: 2px 2px 4px black;
-    transform: scale(1.3);
+    box-shadow: 2px 2px 4px blue;
+    color: blue;
+    transform: scale(1.2);
   }
 `;

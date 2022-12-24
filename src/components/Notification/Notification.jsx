@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
-import { TfiFaceSad } from 'react-icons/tfi';
-import { NotificationWrapper, NotificationMessage } from './Notification.styled';
+import {
+  NotificationWrapper,
+  NotificationMessage,
+} from './Notification.styled';
 
-export const Notification = ({ message }) =>
-    <NotificationWrapper>
-        <NotificationMessage>{message}</NotificationMessage>
-        <TfiFaceSad size={`1.5em`}/>
-    </NotificationWrapper>
+export const Notification = ({ message }) => (
+  <NotificationWrapper>
+    <NotificationMessage>{message}</NotificationMessage>
+  </NotificationWrapper>
+);
 
 Notification.propTypes = {
-    message: PropTypes.string.isRequired,
-}
+  message: PropTypes.string.isRequired,
+};
